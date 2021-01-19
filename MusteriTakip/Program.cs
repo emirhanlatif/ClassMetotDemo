@@ -24,26 +24,14 @@ namespace MusteriTakip
             musteri3.musterisoyadi = "Kiraz";
             musteri3.musteriyasi = 43;
 
-            MusteriManager musteriManager = new MusteriManager();
-           
+            MusteriManager musteriManager = new MusteriManager();        
             musteriManager.Ekle(musteri1);
-            musteriManager.Ekle(musteri2);
-         
+            musteriManager.Ekle(musteri2);       
 
             Musteri[] musteriler = new Musteri[] {musteri1,musteri2 };
             musteriManager.Listele(musteriler);
 
             musteriManager.Sil(musteri1);
-
-            //Musteri[] musteriler = new Musteri[] { musteri1, musteri2 };
-
-            //foreach (var musteri in musteriler)
-            //{
-            //    Console.WriteLine(musteri.Id);
-            //    Console.WriteLine(musteri.musteriadi + " " + musteri.musterisoyadi);
-            //    Console.WriteLine(musteri.musteriyasi);
-            //    Console.WriteLine("---------");
-            //}
         }
     }
 }
